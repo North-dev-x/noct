@@ -59,12 +59,14 @@ Permission Level: Helper
 
 Returns a list of all commands and their permission levels.
 
+
 #### :perms
 Permission Level: Helper
 
 `:perms`
 
 Returns your current permission level.
+
 
 #### :debug
 Permission Level: Head Moderator
@@ -73,12 +75,14 @@ Permission Level: Head Moderator
 
 Teleports you to the debug area.
 
+
 #### :ban
 Permission Level: Moderator
 
 `:ban <...Target>`
 
 Bans the given target(s) from the game.
+
 
 `:ban -remote <...Number>`
 
@@ -89,12 +93,14 @@ Bans the given UserID(s) from the game.
 The `-noalt` option will cause the Ban API to not automatically search for the user's alts. 
 This is only useful in very specific situations.
 
+
 #### :unban
 Permission Level: Moderator
 
 `:unban <...Number>
 `
 Unbans the given UserID(s) from the game.
+
 
 #### :wipe
 Permission Level: Moderator
@@ -103,12 +109,14 @@ Permission Level: Moderator
 `
 Wipes the given target(s), setting their lives to 0.
 
+
 #### :silver
 Permission Level: Moderator
 
 `:silver <Target?> <Number?>`
 
 Gives the given target(or yourself) the given number (or 5000) of silver.
+
 
 Examples:
 ```lua
@@ -124,12 +132,14 @@ Permission Level: Moderator
 
 Gives you a forcefield.
 
+
 #### :unff
 Permission Level: Moderator
 
 `:unff`
 
 Removes your forcefield.
+
 
 #### :restore
 Permission Level: Junior
@@ -138,12 +148,14 @@ Permission Level: Junior
 
 Restores the given targets.
 
+
 #### :heal
 Permission Level: Moderator
 
 `:heal <Target?>`
 
 Heals yourself, or the given target, to full HP.
+
 
 #### :givetrinket
 Permission Level: Helper
@@ -153,12 +165,14 @@ Permission Level: Helper
 Gives the target(or yourself), all of the listed trinkets. (given as string literals)
 If a number is passed, it gives you that number of trinkets.-
 
+
 #### :gate
 Permission Level: Head Moderator
 
 `:gate <String>
 `
 Teleports you to the specified gate location, given as a string literal
+
 
 #### :giveskill
 Permission Level: Head Moderator
@@ -167,12 +181,14 @@ Permission Level: Head Moderator
 
 Gives yourself, or the given target, all of the listed skills.
 
+
 #### :setname
 Permission Level: Head Moderator
 
 `:setname <String> <Target?>`
 
 Sets you or the given target's name to the given string literal.
+
 
 #### :join
 Permission Level: Helper
@@ -181,12 +197,14 @@ Permission Level: Helper
 `
 Teleports you to the given UserID's server if they are playing the game.
 
+
 #### :re
 Permission Level: Helper
 
 `:re <...Target?> 
 `
 Respawns you, or the given targets.
+
 
 #### :globalmsg
 Permission Level: Head Moderator
@@ -195,6 +213,7 @@ Permission Level: Head Moderator
 `
 Replicates the given string as a global message to all running game servers.
 
+
 #### :goto
 Permission Level: Moderator
 
@@ -202,11 +221,13 @@ Permission Level: Moderator
 `
 Teleports you to the given target.
 
+
 #### :bring
 Permission Level: Moderator
 
 `:bring <Target>`
 
 Teleports the given target to you.
+
 
 ---
