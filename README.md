@@ -163,7 +163,7 @@ Permission Level: Junior
 
 `:restore <...Target>`
 
-Restores the given targets.
+Restores 1 life to the given targets.
 
 
 
