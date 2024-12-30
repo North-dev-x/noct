@@ -24,7 +24,7 @@ Defined as any of the following:
 ```
 ##### Option
 An option is any characters following a `-` or `--`.
-```bash
+```sh
 --noalt
 -remote
 ```
