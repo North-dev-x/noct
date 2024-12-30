@@ -1,3 +1,5 @@
+# NOCT REFERENCE
+
 The following syntax is "incredibly difficult with little to no hand-holding."
 This is due to a low level of abstraction from the actual processes that you're calling with the commands.
 
@@ -5,9 +7,9 @@ I mostly made the command syntax this complicated for fun, as a mental exercise.
 I call it "North's Overly Complicated Terminal" or NOCT.
 
 The following is a reference for all of the commands, and all of the syntax types used in executing commands.
-#### Syntax Reference
+## Syntax Reference
 
-#### Command
+### Command
 Defined as any characters following a `:`.
 Must **ALWAYS** be the first token of a command.
 ```diff
@@ -15,21 +17,21 @@ Must **ALWAYS** be the first token of a command.
 - :help
 - :debug
 ```
-#### String 
+### String 
 Defined as any of the following:
 ```lua
 'this is a string'
 "this is also a string"
 'meow'
 ```
-#### Option
+### Option
 An option is any characters following a `-` or `--`.
 ```bash
 --noalt
 -remote
 ```
 
-#### Number 
+### Number 
 A number is, well, a number.
 ```lua
 10
@@ -37,7 +39,7 @@ A number is, well, a number.
 30
 40
 ```
-#### Target
+### Target
 The name of a player in the server.
 ```lua
 xAbruptum
@@ -45,14 +47,14 @@ funwillpanda2
 ChillyDedM8
 ```
 
-#### General Info
+### General Info
 In this documentation:
 `<...Type>` will refer to any number of parameters of that type.
 `<Type?>` will refer to optional parameters.
 `<...Type?>` will refer to any number of parameters, that are optional.
 
-#### Command List
-#### :help
+## Command List
+### :help
 Permission Level: Helper
 
 `:help`
@@ -62,7 +64,7 @@ Returns a list of all commands and their permission levels.
 
 
 
-#### :perms
+### :perms
 Permission Level: Helper
 
 `:perms`
@@ -72,7 +74,7 @@ Returns your current permission level.
 
 
 
-#### :debug
+### :debug
 Permission Level: Head Moderator
 
 `:debug`
@@ -82,7 +84,7 @@ Teleports you to the debug area.
 
 
 
-#### :ban
+### :ban
 Permission Level: Moderator
 
 `:ban <...Target>`
@@ -101,7 +103,7 @@ This is only useful in very specific situations.
 
 
 
-#### :unban
+### :unban
 Permission Level: Moderator
 
 `:unban <...Number>
@@ -109,7 +111,7 @@ Permission Level: Moderator
 Unbans the given UserID(s) from the game.
 
 
-#### :wipe
+### :wipe
 Permission Level: Moderator
 
 `:wipe <...Target>
@@ -119,7 +121,7 @@ Wipes the given target(s), setting their lives to 0.
 
 
 
-#### :silver
+### :silver
 Permission Level: Moderator
 
 `:silver <Target?> <Number?>`
@@ -136,7 +138,7 @@ Examples:
 :silver 60000 -- gives 60k silver to yourself
 ```
 
-#### :ff
+### :ff
 Permission Level: Moderator
 
 `:ff`
@@ -146,7 +148,7 @@ Gives you a forcefield.
 
 
 
-#### :unff
+### :unff
 Permission Level: Moderator
 
 `:unff`
@@ -156,7 +158,7 @@ Removes your forcefield.
 
 
 
-#### :restore
+### :restore
 Permission Level: Junior
 
 `:restore <...Target>`
@@ -166,7 +168,7 @@ Restores the given targets.
 
 
 
-#### :heal
+### :heal
 Permission Level: Moderator
 
 `:heal <Target?>`
@@ -176,7 +178,7 @@ Heals yourself, or the given target, to full HP.
 
 
 
-#### :givetrinket
+### :givetrinket
 Permission Level: Helper
 
 `:givetrinket <...String> <Number?> <Target?>`
@@ -187,7 +189,7 @@ If a number is passed, it gives you that number of trinkets.
 
 
 
-#### :gate
+### :gate
 Permission Level: Head Moderator
 
 `:gate <String>
@@ -197,7 +199,7 @@ Teleports you to the specified gate location, given as a string literal
 
 
 
-#### :giveskill
+### :giveskill
 Permission Level: Head Moderator
 
 `:giveskill <...String> <Target?>`
@@ -207,7 +209,7 @@ Gives yourself, or the given target, all of the listed skills.
 
 
 
-#### :setname
+### :setname
 Permission Level: Head Moderator
 
 `:setname <String> <Target?>`
@@ -217,7 +219,7 @@ Sets you or the given target's name to the given string literal.
 
 
 
-#### :join
+### :join
 Permission Level: Helper
 
 `:join <Number>
@@ -227,7 +229,7 @@ Teleports you to the given UserID's server if they are playing the game.
 
 
 
-#### :re
+### :re
 Permission Level: Helper
 
 `:re <...Target?> 
@@ -237,7 +239,7 @@ Respawns you, or the given targets.
 
 
 
-#### :globalmsg
+### :globalmsg
 Permission Level: Head Moderator
 
 `:globalmsg <String>
@@ -247,7 +249,7 @@ Replicates the given string as a global message to all running game servers.
 
 
 
-#### :goto
+### :goto
 Permission Level: Moderator
 
 `:goto <Target>
@@ -257,7 +259,7 @@ Teleports you to the given target.
 
 
 
-#### :bring
+### :bring
 Permission Level: Moderator
 
 `:bring <Target>`
